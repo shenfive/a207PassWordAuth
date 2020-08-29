@@ -3,19 +3,23 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		60661DFCFCD2B4499A89D26A /* Pods_a207PassWordAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95738249272355780E9BFFD7 /* Pods_a207PassWordAuth.framework */; };
 		BA7543F424FA334E003FAD4F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7543F324FA334E003FAD4F /* AppDelegate.swift */; };
 		BA7543F624FA334E003FAD4F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7543F524FA334E003FAD4F /* SceneDelegate.swift */; };
 		BA7543F824FA334E003FAD4F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7543F724FA334E003FAD4F /* ViewController.swift */; };
 		BA7543FB24FA334E003FAD4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA7543F924FA334E003FAD4F /* Main.storyboard */; };
 		BA7543FD24FA3350003FAD4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA7543FC24FA3350003FAD4F /* Assets.xcassets */; };
 		BA75440024FA3350003FAD4F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA7543FE24FA3350003FAD4F /* LaunchScreen.storyboard */; };
+		BA75440824FA348F003FAD4F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BA75440724FA348F003FAD4F /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0FF15D6EF3B28B39A91C982A /* Pods-a207PassWordAuth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-a207PassWordAuth.debug.xcconfig"; path = "Target Support Files/Pods-a207PassWordAuth/Pods-a207PassWordAuth.debug.xcconfig"; sourceTree = "<group>"; };
+		95738249272355780E9BFFD7 /* Pods_a207PassWordAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_a207PassWordAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA7543F024FA334E003FAD4F /* a207PassWordAuth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = a207PassWordAuth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA7543F324FA334E003FAD4F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA7543F524FA334E003FAD4F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +28,8 @@
 		BA7543FC24FA3350003FAD4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA7543FF24FA3350003FAD4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA75440124FA3350003FAD4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA75440724FA348F003FAD4F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EE61DB1D358DFDAAA578768F /* Pods-a207PassWordAuth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-a207PassWordAuth.release.xcconfig"; path = "Target Support Files/Pods-a207PassWordAuth/Pods-a207PassWordAuth.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60661DFCFCD2B4499A89D26A /* Pods_a207PassWordAuth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D2BBBEA296BA84A4F651C5F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				95738249272355780E9BFFD7 /* Pods_a207PassWordAuth.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		525940964F0D36501398E035 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0FF15D6EF3B28B39A91C982A /* Pods-a207PassWordAuth.debug.xcconfig */,
+				EE61DB1D358DFDAAA578768F /* Pods-a207PassWordAuth.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		BA7543E724FA334E003FAD4F = {
 			isa = PBXGroup;
 			children = (
 				BA7543F224FA334E003FAD4F /* a207PassWordAuth */,
 				BA7543F124FA334E003FAD4F /* Products */,
+				525940964F0D36501398E035 /* Pods */,
+				1D2BBBEA296BA84A4F651C5F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +82,7 @@
 		BA7543F224FA334E003FAD4F /* a207PassWordAuth */ = {
 			isa = PBXGroup;
 			children = (
+				BA75440724FA348F003FAD4F /* GoogleService-Info.plist */,
 				BA7543F324FA334E003FAD4F /* AppDelegate.swift */,
 				BA7543F524FA334E003FAD4F /* SceneDelegate.swift */,
 				BA7543F724FA334E003FAD4F /* ViewController.swift */,
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BA75440424FA3350003FAD4F /* Build configuration list for PBXNativeTarget "a207PassWordAuth" */;
 			buildPhases = (
+				9A40C642D27F338FA40EC816 /* [CP] Check Pods Manifest.lock */,
 				BA7543EC24FA334E003FAD4F /* Sources */,
 				BA7543ED24FA334E003FAD4F /* Frameworks */,
 				BA7543EE24FA334E003FAD4F /* Resources */,
+				FAD676624E0D253D579094FD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,12 +155,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA75440024FA3350003FAD4F /* LaunchScreen.storyboard in Resources */,
+				BA75440824FA348F003FAD4F /* GoogleService-Info.plist in Resources */,
 				BA7543FD24FA3350003FAD4F /* Assets.xcassets in Resources */,
 				BA7543FB24FA334E003FAD4F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9A40C642D27F338FA40EC816 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-a207PassWordAuth-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FAD676624E0D253D579094FD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-a207PassWordAuth/Pods-a207PassWordAuth-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-a207PassWordAuth/Pods-a207PassWordAuth-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-a207PassWordAuth/Pods-a207PassWordAuth-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BA7543EC24FA334E003FAD4F /* Sources */ = {
@@ -282,6 +354,7 @@
 		};
 		BA75440524FA3350003FAD4F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FF15D6EF3B28B39A91C982A /* Pods-a207PassWordAuth.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +373,7 @@
 		};
 		BA75440624FA3350003FAD4F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE61DB1D358DFDAAA578768F /* Pods-a207PassWordAuth.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
