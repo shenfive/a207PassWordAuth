@@ -36,9 +36,8 @@ class Page2ViewController: UIViewController {
                     let alert = UIAlertController(title: "歡迎", message: result?.user.email, preferredStyle: .alert)
                     let okBtn = UIAlertAction(title: "OK", style: .default, handler: nil)
                     alert.addAction(okBtn)
-                    self.present(alert, animated: true) {
-                        self.navigationController?.popViewController(animated: true)
-                    }
+                    self.present(alert, animated: true, completion: nil)
+                  
                 }
             }
         }
