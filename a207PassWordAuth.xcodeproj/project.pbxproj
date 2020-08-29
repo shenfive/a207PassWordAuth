@@ -15,6 +15,7 @@
 		BA7543FD24FA3350003FAD4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA7543FC24FA3350003FAD4F /* Assets.xcassets */; };
 		BA75440024FA3350003FAD4F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA7543FE24FA3350003FAD4F /* LaunchScreen.storyboard */; };
 		BA75440824FA348F003FAD4F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BA75440724FA348F003FAD4F /* GoogleService-Info.plist */; };
+		BA75440A24FA38F8003FAD4F /* Page2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA75440924FA38F8003FAD4F /* Page2ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		BA7543FF24FA3350003FAD4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA75440124FA3350003FAD4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA75440724FA348F003FAD4F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BA75440924FA38F8003FAD4F /* Page2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page2ViewController.swift; sourceTree = "<group>"; };
 		EE61DB1D358DFDAAA578768F /* Pods-a207PassWordAuth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-a207PassWordAuth.release.xcconfig"; path = "Target Support Files/Pods-a207PassWordAuth/Pods-a207PassWordAuth.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -90,6 +92,7 @@
 				BA7543FC24FA3350003FAD4F /* Assets.xcassets */,
 				BA7543FE24FA3350003FAD4F /* LaunchScreen.storyboard */,
 				BA75440124FA3350003FAD4F /* Info.plist */,
+				BA75440924FA38F8003FAD4F /* Page2ViewController.swift */,
 			);
 			path = a207PassWordAuth;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 			files = (
 				BA7543F824FA334E003FAD4F /* ViewController.swift in Sources */,
 				BA7543F424FA334E003FAD4F /* AppDelegate.swift in Sources */,
+				BA75440A24FA38F8003FAD4F /* Page2ViewController.swift in Sources */,
 				BA7543F624FA334E003FAD4F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -33,10 +33,10 @@
             </objects>
             <point key="canvasLocation" x="1042.0289855072465" y="98.4375"/>
         </scene>
-        <!--View Controller-->
+        <!--Page2 View Controller-->
         <scene sceneID="xPI-wB-NMl">
             <objects>
-                <viewController id="WQq-Ku-bfB" sceneMemberID="viewController">
+                <viewController id="WQq-Ku-bfB" customClass="Page2ViewController" customModule="a207PassWordAuth" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qph-Bm-Owu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -51,19 +51,26 @@
                                 <rect key="frame" x="20" y="210" width="304" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <textInputTraits key="textInputTraits" keyboardType="alphabet" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MKO-Gq-1al">
                                 <rect key="frame" x="20" y="290" width="126" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="確定"/>
+                                <connections>
+                                    <action selector="signUp:" destination="WQq-Ku-bfB" eventType="touchUpInside" id="uBl-Y6-MxG"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="hWX-NH-x4p"/>
                     </view>
                     <navigationItem key="navigationItem" id="hWc-qj-y4R"/>
+                    <connections>
+                        <outlet property="account" destination="NMF-ok-rhq" id="LxI-Ft-VTT"/>
+                        <outlet property="password" destination="6nY-Xd-aux" id="ZMK-Ye-L1X"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y7C-pC-FTo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
