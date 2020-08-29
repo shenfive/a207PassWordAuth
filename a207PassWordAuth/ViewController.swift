@@ -28,7 +28,9 @@ class ViewController: UIViewController {
     func signInUI(){
         print("己登入")
         if let user = Auth.auth().currentUser?.email{
-            status.text = "歡迎" + user
+            if let emailChecked  = Auth.auth().currentUser?.isEmailVerified{
+                            status.text = "歡迎\(user) email:\(emailChecked)"
+            }
         }
     }
     func signOutUI(){
@@ -55,5 +57,26 @@ class ViewController: UIViewController {
             print(error.localizedDescription)
         }
     }
+    @IBAction func vEmail(_ sender: Any) {
+        Auth.auth().currentUser?.sendEmailVerification(completion: { (error) in
+            print(error?.localizedDescription)
+        })
+    }
+    
+    @IBAction func forgetPassword(_ sender: Any) {
+        
+        if let email = account.text{
+            Auth.auth().sendPasswordReset(withEmail: email) { (error) in
+                if let error = error{
+                    let alert = UIAlertController(title: "Error", message: error.localizedDescription, preferredStyle: .alert)
+                    let okBtn = UIAlertAction(title: "OK", style: .default, handler: nil)
+                    alert.addAction(okBtn)
+                    self.present(alert, animated: true, completion: nil)
+                }
+            }
+        }
+    }
+    
+    
 }
 
